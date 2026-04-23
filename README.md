@@ -2,19 +2,19 @@
 A Deep Learning solution for automated brain tumor detection in MRI scans using Convolutional Neural Networks (CNNs). Built for high-accuracy medical image classification.
 
 
-🚀 How to Run
+🚀 How to Run:
 Unzip the CS464_Group8_BrainTumorClassification_1.ipynb.zip folder.
 
 Open the .ipynb file in Google Colab or Jupyter Notebook.
 
 Ensure all dependencies (timm, pytorch-grad-cam) are installed.
 
-📌 Project Overview
+📌 Project Overview:
 This project implements a deep learning pipeline to classify brain tumor MRI scans into four categories: Glioma, Meningioma, Pituitary, and No Tumor. By leveraging Transfer Learning and explainable AI techniques, the model achieves high diagnostic accuracy while providing visual justifications for its predictions.
 
 Note on Project Files: Due to the high-resolution visualization outputs (Grad-CAM and Batch Augmentations), the .ipynb file exceeds GitHub's preview limits. The full notebook with all executed cell outputs is available in the  CS464_Group8_BrainTumorClassification_1.ipynb.zip folder in this repository.
 
-📊 Key Results
+📊 Key Results:
 Our final model, based on the EfficientNet-B0 architecture, significantly outperformed all baseline measures.
 
 Model	Accuracy	Macro F1-Score
@@ -25,7 +25,7 @@ Per-Class Performance
 
 The model demonstrated exceptional reliability in identifying healthy scans (99.7% Recall) and distinguishing pituitary tumors (99.4% Precision). The balanced Macro F1-score of 0.916 confirms that the network performs consistently across all pathological classes.
 
-🛠 Methodology
+🛠 Methodology:
 1. Data Engineering & Augmentation
 
 To ensure clinical reliability, we implemented a stochastic augmentation strategy (rotations, flips, and affine shears). This acts as a critical form of regularization, forcing the network to learn generalized pathological features rather than memorizing specific training samples.
